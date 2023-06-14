@@ -1,1 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Hello! Welcome to Skidded Client!">
+	<main>
+		<h1>More <span class="text-gradient">On what we offer..</span></h1>
+		
+	</main>
+</Layout>
+	<main>
+  
+				<ul role="list" class="link-card-grid">
+			<Card
+				href="https://skiddedruck.github.io/"
+				title="Back"
+				body="Back to the main page"
+			/>
+		</ul>
+						<ul role="list" class="link-card-grid">
+			<Card
+				title="Stabilty"
+				body="Skidded client is decently stable and gets fixes right away to ensure you all have fun!"
+			/>
+		</ul>
+				</ul>
+						<ul role="list" class="link-card-grid">
+			<Card
+				title="Quality"
+				body="The quality of our skidding is very good.. from the best modules out there!"
+			/>
+		</ul>
+    				<ul role="list" class="link-card-grid">
+			<Card
+				href="https://i.e-z.host/k0tnbdvq.png"
+				title="Updates"
+				body="Our updates are very regular, usually every week with new additions to the config. E.g. new texture packs like this one (press card to see)"
+			/>
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
 
